@@ -71,7 +71,9 @@ Widget buildRecipeCard(Recipe recipe) {
       padding: const EdgeInsets.all(15.0),
       child: Column(
         children: <Widget>[
-          Image(image: AssetImage(recipe.imageUrl)),
+          Image(image: AssetImage(recipe.imageUrl,),
+          fit: BoxFit.cover,
+          ),
           const SizedBox(
             height: 15.0,
           ),
